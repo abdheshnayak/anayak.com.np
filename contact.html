@@ -47,21 +47,21 @@ class: contact
             <!-- Left Side Ends -->
             <!-- Contact Form Starts -->
             <div class="col-12 col-lg-8">
-                <form class="contactform" method="post" action="php/process-form.php">
+                <form class="contactform" method="POST" action="https://formspree.io/f/xrgooldj">
                     <div class="contactform">
                         <div class="row">
                             <div class="col-12 col-md-4">
                                 <input type="text" name="name" placeholder="YOUR NAME">
                             </div>
                             <div class="col-12 col-md-4">
-                                <input type="email" name="email" placeholder="YOUR EMAIL">
+                                <input type="email" name="_replyto" placeholder="YOUR EMAIL">
                             </div>
                             <div class="col-12 col-md-4">
                                 <input type="text" name="subject" placeholder="YOUR SUBJECT">
                             </div>
                             <div class="col-12">
                                 <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
-                                <button type="submit" class="btn btn-contact">Send Message</button>
+                                <button type="submit" value="Send Message" class="btn btn-contact">Send Message</button>
                             </div>
                             <div class="col-12 form-message">
                                 <span class="output_message text-center font-weight-600 text-uppercase"></span>
