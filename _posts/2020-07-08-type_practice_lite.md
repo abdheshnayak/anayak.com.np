@@ -1,4 +1,7 @@
 ---
+Langages: C++
+client: null
+projectType: Desktop Application
 class: blog-post
 author: Abdhesh Nayak
 layout: blogpost

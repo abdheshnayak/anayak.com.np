@@ -43,6 +43,8 @@ Version: 1.0
 
 /*** Miscellaneous ***/
 
+@import "native.css";
+
 html {
   overflow-x: hidden;
   height: 100%;
