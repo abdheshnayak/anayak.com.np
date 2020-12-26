@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body class="{{page.class}}">
+
+    {% include header.html %}
+
+    <!-- Page Title Starts -->
+    <section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+        <h1>my <span>blog</span></h1>
+        <span class="title-bg">posts</span>
+    </section>
+    <!-- Page Title Ends -->
+
+    <!-- Main Content Starts -->
+    <section class="main-content revealator-slideup revealator-once revealator-delay1">
+        <div class="container">
+            <div class="row">
+                <!-- Article Starts -->
+                <article class="col-12">
+                    <!-- Meta Starts -->
+                    <div class="meta open-sans-font">
+                        {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+                        <span><i class="fa fa-user"></i> {{page.author}} </span>
+                        <span class="date"><i class="fa fa-calendar"></i> {{ page.date | date: date_format }} </span>
+                        <span><i class="fa fa-tags"></i> {{page.tags}}</span>
+                    </div>
+                    <!-- Meta Ends -->
+                    <!-- Article Content Starts -->
+                    <h1 class="text-uppercase text-capitalize">{{page.title}}</h1>
+                    <img src="{{page.image}}" class="img-fluid" alt="Blog image" />
+                    <div class="blog-excerpt open-sans-font pb-5">
+                        {{content}}
+                    </div>
+                    <!-- Article Content Ends -->
+                </article>
+                <!-- Article Ends -->
+            </div>
+        </div>
+    </section>
+
+    {% include footer.html %}
+
+
+</body>
+
+</html>
