@@ -1,0 +1,1 @@
+# anayak.com.np
